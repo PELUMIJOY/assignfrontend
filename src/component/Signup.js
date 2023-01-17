@@ -6,7 +6,7 @@ import { useState } from 'react';
 import axios from 'axios'
 import "./Home/Home.css";
 
-const baseUrl = "http://localhost:4000";
+const baseUrl = "https://basic-app-backend.onrender.com";
 
 const Signup = () => {
   const[formData, setFormData] = useState({});

@@ -16,11 +16,9 @@ export const UserProvider = ({children}) => {
           };
          
           const {data} = await apiPost(`/users/verify/${signature}`, otpData)
-        
+          setVerifymessage(data.message)
               if(data.message){
                   toast.success(data.message);
-                  setVerifymessage(data.message)
-                 
               }
              
             }
@@ -32,7 +30,7 @@ export const UserProvider = ({children}) => {
 
     return <UserContext.Provider value={{
         OTPConfig,
-        verifymessage
+        verifymessage,
     }}>
     {children}
     </UserContext.Provider>

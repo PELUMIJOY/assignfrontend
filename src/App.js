@@ -8,6 +8,7 @@ import Signup from "./component/Signup";
 import Otp from './component/Otp/Otp'
 import { ToastContainer } from "react-toastify";
 import {UserProvider} from './component/Context/Authcontext'
+import {ProtectRoute} from './component/Context/ProtectRoute'
 
 function App() {
   return (
@@ -17,9 +18,12 @@ function App() {
       <Router>
         
         <Routes>
-          <Route path="/" element={<Home/>} />
+            
+          
+          <Route path="/" element={<ProtectRoute><Home/> </ProtectRoute> } />
+           
           <Route path="/signup" element={<Signup/>}/>
-          <Route path="/login" element={<Login/>} />
+          <Route path="/login" element={<ProtectRoute><Login/></ProtectRoute>} />
           <Route path='/otp' element={<Otp/>}/>
         </Routes>
         

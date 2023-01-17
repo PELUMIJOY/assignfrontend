@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseUrl= 'http://localhost:4000'
+const baseUrl= 'https://basic-app-backend.onrender.com'
 
 
 export const apiPost = (path, data) => {

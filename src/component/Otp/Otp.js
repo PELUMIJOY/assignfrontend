@@ -3,10 +3,7 @@ import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import OTPInputField from "react-otp-input";
 import { toast } from "react-toastify";
-// import axios from "axios";
-// import { toast } from "react-toastify";
 import { ResendOTP } from "../Context/Authcontext";
-// import { apiPost } from "../Utils/axios";
 import "./Otp.css";
 import UserContext from "../Context/Authcontext";
 
@@ -30,9 +27,11 @@ const Otp = () => {
       OTPConfig(otp, getSignature);
       setOtp('')
       
-      if(verifymessage !== ''){
-        navigate('/login')
-      }
+      //redirects to login after 2secs
+        setTimeout(()=>{
+          navigate('/login')
+        },2000)
+      
     }
     
   };
