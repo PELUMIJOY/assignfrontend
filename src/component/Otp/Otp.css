@@ -1,0 +1,66 @@
+.otp_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.208);
+    text-align: center;
+    box-shadow: 5px 5px 5px 0px rgba(73, 72, 72, 0.311);
+}
+
+.center_otpCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.588); */
+}
+
+.otp_title{
+    font-size: 2em;
+    margin: 10px 0px;
+}
+
+.otp_description{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.otp_form{
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.OTP_field{
+    display: flex;
+    justify-content: center;
+}
+
+.otp_btn{
+    width: 100px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.961);
+    
+}
+.new-btn-style{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
